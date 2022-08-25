@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #00223e, #ffa17f);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#wrap__timmer h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 40px;
+  letter-spacing: 3px;
+}
+
+#timmer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 40px;
+}
+
+#timmer__content p {
+  padding: 20px 10px;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+}
+
+#timmer__content span {
+  padding: 20px 10px;
+  text-align: center;
+  align-items: center;
+  color: #333;
+}
+
+#timmer__btns button {
+  width: 80px;
+  height: 40px;
+  background-color: #fff;
+  color: violet;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.5);
+  margin-left: 20px;
+  transition: all 0.4s ease-out;
+}
+
+#timmer__btns button.stopActive,
+#timmer__btns button.active {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
